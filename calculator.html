@@ -1,0 +1,63 @@
+<div class ="calculator"> 
+<input type="number" id="num1"/>
+<input type="number" id="num2" />
+<button class ="submitButton" type = "submit" onclick="add()">Add</button>
+<button class ="submitButton" type = "submit" onclick="subtract()">Subtract</button>
+<button class ="submitButton" type = "submit" onclick="multiply()">Multiply</button>
+<button class ="submitButton" type = "submit" onclick="divide()">Divide</button>
+<input type="text" id="answer"/>
+</div>
+
+<script>
+    function validate(){
+        let num1 = document.getElementById("num1")
+            let num2 = document.getElementById("num2")
+        if (num1.value.match(/^-?\d+\.?\d*$/)){
+            num1.className = ""
+            if (num2.value.match(/^-?\d+\.?\d*$/)){
+            num2.className=""
+            return true
+            }
+            else {
+                num2.className="incorrect"
+            return false}
+    
+        }
+        else {
+            num1.className="incorrect"
+        return false}
+    }
+
+    function add(){
+        if (validate() == true){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            a = num1 + num2
+            document.getElementById("answer").value = a
+        }
+    }
+    function subtract(){
+        if (validate() == true){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            a = num1 - num2
+            document.getElementById("answer").value = a
+        }
+    }
+    function multiply(){
+        if (validate() == true){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            a = num1 * num2
+            document.getElementById("answer").value = a
+        }
+    }
+    function divide(){
+        if (validate() == true){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            a = num1 / num2
+            document.getElementById("answer").value = a
+        }
+    }
+</script>
