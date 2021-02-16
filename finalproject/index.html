@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Video Calling</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="flexContainer">
+        <div class="leftPane">
+        <span>
+            Log in now!
+        </span>
+    </br>
+        <input type="text" id="channelName" placeholder="room code">
+    </br>
+        <button class="submitButton" id="join" onclick="nextPage()">Join</button>
+    </div>
+    
+        <div class="rightPane">
+        <img class="logoElement" src="https://i.ibb.co/PxhYJRn/sky.jpg"/>
+    </div>
+    </div>
+    <script>
+        function nextPage() {
+            window.location.href = "https://tiffwhuang.github.io/call.html"
+        }
+    </script>
+    <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
+    <script src="agoraRTC.js"></script>
+    </body>
+</html>

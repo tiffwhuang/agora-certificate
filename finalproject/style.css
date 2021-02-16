@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shrikhand', cursive;
+    color:paleturquoise;
+    background-color:palevioletred;
+    font-size: 1.5rem;
+}
+
+.submitButton{
+    font-family: 'Shrikhand', cursive;
+    color:violet;
+}
+.leftPane{
+    margin-top: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+}
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+.rightPane{
+    flex: 1;
+}
+#SelfStream{
+    margin-top: 100px;
+    margin-left: 50px;
+    justify-self: center;
+    border: 2px solid #099dfd;
+    width: 500px;
+    height: 300px;
+}
+
+#remoteStream{
+    margin-top: 150px;
+    margin-left: 50vh;
+    justify-self: center;
+    border: 2px solid #099dfd;
+    width: 800px;
+    height: 500px;
+}
+.controls{
+     width: 100px;
+     margin-left: 50vh;
+}
